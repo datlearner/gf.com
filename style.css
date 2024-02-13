@@ -1,0 +1,600 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Oxygen', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 10px;
+  }
+
+  
+.moondawg img {
+    width: 80px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 15px;
+    /*background: linear-gradient(#808080,#3fada8);*/
+    background-color: rgba(0, 0, 0, .6);
+    font-weight: bolder;
+ 
+}
+nav a {
+    text-decoration: none;
+    /*just uncomment and color and choose the one we can use gold or green*/
+    color: rgb(190, 168, 42);
+    /*color: green;*/
+}
+nav a:hover{
+    color: green;
+}
+.list{
+        display: flex;
+        list-style: none;
+        gap: 25px;
+}
+        
+#toggler, label{
+    display: none;
+    }
+label i{
+    color: white;
+}
+
+
+.transparent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center{
+    min-width: 800px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+@media screen and (max-width: 650px){ 
+.menu{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+}
+label{
+    display: inline-flex;
+}
+#toggler:checked~.menu{
+    max-height: 100%;
+}
+.list{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    }
+    
+}
+
+.home-page{
+    width: 100%;
+    height: 100%;
+    /*background-image: url(./4.jpg);*/
+    background-image: url(./pexels-lê-minh-3062554.jpg);
+    background-size: cover;
+    
+    background-position: center;
+}
+/*
+.services{
+    background-color: turquoise;
+    width: 100%;
+    min-height: 100%;
+}
+/*styling about */
+.about{
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.about-content h2{
+    font-style: italic;
+    color: darkolivegreen;
+    font: oblique 15px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.about-content p {
+    /* style p under about*/
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 20px 0;
+    margin-left: 80px;
+    margin-right: 70px;
+}
+/* styling our team layout*/
+  
+/* style client text */
+.titles {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: rgb(14, 13, 6);
+    font-style: italic;
+  }
+  
+  .title-clients h2 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .text-clients {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .client {
+    text-align: center;
+    margin: 0 20px;
+  }
+  .client img {
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .text-clients {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .client {
+    text-align: center;
+    margin: 0 20px;
+  }
+  .client img {
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+  /*<!-- what we do-->
+    --list of what we do 
+    more to be found on services -->*/   
+      
+.title-service img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(14, 13, 6);
+    justify-content: space-evenly;
+    align-items: center;
+}
+ /*what we do end*/     
+.text-team {
+    display: flex;  
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    
+}
+.team-member {
+   width: 30%;
+   text-align: center;
+   padding: 10px;
+   
+}
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 20px;
+    
+  }
+/* SERVICES*/
+
+.Live-stream{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.Hire{
+    width: 100%;
+    min-height: 100%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.Events{
+    width: 100%;
+    min-height: 100%;
+ 
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.Production{
+    width: 100%;
+    min-height: 100%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.Installation{
+    width: 100%;
+    min-height: 100%;
+    overflow-y: hidden;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.Hist{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.contact-us{
+    width: 100%;
+    height: 100%;
+    background-color: indianred;
+}
+
+.main-container{
+    margin: 15px auto;
+}
+.buttons{
+    display: flex;
+    gap: 2px;
+   
+}
+
+.blocks{
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.diva{
+    display: block;
+    width: 100%;
+}
+
+.divb{
+ 
+    display: none;
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.buttons button{
+    border: none;
+    margin: 10px 6px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(190, 168, 42);
+    color: green;
+
+    font-weight: bolder;
+    font-size: 17px;
+}
+.buttons button:hover{
+    cursor: pointer;
+    background-color: green;
+    color: rgb(190, 168, 42);
+}
+
+.Live-stream h1{
+    text-align: center;
+    font-size: 35px;
+    padding: 16px 0px;
+    font-weight: bolder;
+    color: green;
+    letter-spacing: 7px;
+}
+
+.diva .flexx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.diva .flexx div{
+    width: 290px;
+    height: 530px;
+    margin: 8px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgb(218, 255, 206), -2px -2px 5px rgb(230, 243, 230);
+}
+.diva .flexx h3{
+    text-align: center;
+    color: green;
+    padding: 13px 0px;
+}
+
+.diva .flexx img{
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    padding: 5px 0px;
+}
+
+.diva .flexx  p{
+    padding: 10px;
+    line-height: 27px;
+    font-size: 14px;
+}
+
+.divb .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divb .flex div{
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+}
+
+.divb .flex img{
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.divb .flex h3{
+    padding: 8px 0px;
+    color: green;
+}
+.divb .flex p{
+    line-height: 27px;
+    padding: 5px 0px;
+    font-size: 14px;
+}
+.padding h3{
+    margin-top: 15px;
+  
+}
+
+
+.container {
+    position: relative;
+    width: 360px;
+    cursor: pointer;
+    color: gold;
+    margin: 5px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, .7);
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    height: 100%;
+  }
+  
+  .text h1{
+    white-space: nowrap; 
+    color: green;
+    font-size: 30px;
+    padding: 10px 5px; 
+    text-wrap: wrap;
+  }
+  .container p{
+    padding: 0px 5px;
+    font-size: 15px;
+  }
+
+.flex-one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.install-h{
+    text-align: center;
+    color: green;
+    font-weight: bolder;
+    padding: 10px 0px;
+}
+.hire-flex h4{
+    padding: 10px 0px;
+}
+
+.hire-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hire-flex div{
+    width: 280px;
+    height: 300px;
+    margin: 5px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+.hire-flex div img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ 
+}
+
+
+
+.hire h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: green;
+    letter-spacing: 3px;
+    padding: 10px 0px;
+}
+.hire-flex div  .small{
+    width: 75%;
+}
+
+
+.Events .flexxx div{
+    width: 500px;
+    height: 300px;
+    margin: 5px;
+}
+
+.Events .flexxx {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#semi{
+    background-image: url(./seminars.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#semiii{
+    background-image: url(./videography.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#conf{
+    background-image: url(./conference.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#product{
+    background-image: url(./product.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+#live{
+    background-image: url(./Live+Streaming.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.Events .flexxx h1{
+    padding: 10px;
+    color: green;
+}
+
+.Events .flexxx p{
+    line-height: 30px;
+    padding: 10px;
+}
+.h{
+    text-align: center;
+    color: green;
+    padding: 20px 0px;
+}
+
+.Production .flexxx div{
+    width: 500px;
+    height: 300px;
+    margin: 5px;
+}  
+
+.Production .flexxx {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Production .flexxx h1{
+    padding: 10px;
+    color: green;
+}
+
+
+.Production .flexxx p{
+    line-height: 30px;
+    padding: 10px;
+}
+#h{
+    padding: 25px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button button{
+    width: 100px;
+    border: none;
+    background-color: gold;
+    padding: 10px;
+    color: green;
+    font-weight: bolder;
+}
+
+ #nonne{
+    display: none;
+}
